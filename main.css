@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	height: 20%;
+	width: 100%;
+	background: red;
+}
+
+#main-container {
+	height: 80%;
+	width: 100%;
+}
+
+#left-container {
+	height: 100%;
+	width: 30%;
+}
+
+#right-container {
+	height: 100%;
+	width: 70%;
+}
+
+.ui-layout-pane {
+  padding: 0px !important;
+}
+

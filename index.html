@@ -1,20 +1,31 @@
 <html>
-<head>
-<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script src="jquery-ui.js"></script>
-<script src="jquery.layout.js"></script>
-<script>
-    $(document).ready(function () {
-        $('body').layout({ applyDefaultStyles: true });
-    });
-</script>
-</head>
-<body>
-<div class="ui-layout-center">Center</div>
-<div class="ui-layout-north">North</div>
-<div class="ui-layout-south">South</div>
-<div class="ui-layout-east">East</div>
-<div class="ui-layout-west">West</div>
-</body>
+	<head>
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="jquery-ui.js"></script>
+		<script src="jquery.layout.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<script>
+		    $(document).ready(function () {
+		        $('#main-container').layout({ applyDefaultStyles: true });
+		        $('#right-container').layout({applyDefaultStyles: true, north__resizable: false })
+		    });
+		</script>
+	</head>
+	<body>
+		<header>
+			this is the content header
+		</header>
+		<div id="main-container">
+			<div id="right-container" class="ui-layout-center">
+				<div class="ui-layout-north">North</div>
+				<div class="ui-layout-center">Center</div>
+				<div class="ui-layout-east">East</div>
+			</div>
+			<div id="left-container" class="ui-layout-west">
+				West
+
+			</div>
+		</div>
+	</body>
 </html>
