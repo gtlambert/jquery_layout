@@ -28,3 +28,10 @@ header {
   padding: 0px !important;
 }
 
+.ui-layout-toggler .content
+     {
+       font-size: 12px; /* IMPORTANT: default = 1px */
+       font-weight: bold;
+       text-align: center;
+    }
+
