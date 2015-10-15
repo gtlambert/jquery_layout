@@ -14,10 +14,37 @@
 		        		closable: true,
 		        		resizable: true,
 		        		togglerContent_open: "&#8249;",
-		        		togglerContent_closer: "&#8250;"
+		        		togglerContent_closed: "&#8250;",
+		        		togglerTip_open: "Hide",
+		        		togglerTip_closed: "Show",
+		        		size: "30%",
+		        		minSize: 100
+		        	},
+		        	center: {
+		        		size: "70%"
+		        	},
+		        	resizeWhileDragging: true
+		        });
+		        var rightContainer = $('#right-container').layout({
+		        	defaults: {
+		        		applyDefaultStyles: true,
+		        		resizeWhileDragging: true
+		        	},
+		        	north: {
+		        		size: "63",
+		        		resizable: false,
+		        		closable: false
+		        	},
+		        	center: {
+		        	 	size: "50%",
+		        	 	minWidth: "100"
+		        	},
+		        	east: {
+		        	 	size: "50%",
+		        	 	closable: false,
+		        	 	minSize: "100"
 		        	}
 		        });
-		        var rightContainer = $('#right-container').layout({applyDefaultStyles: true, north__resizable: false });
 		    });
 		</script>
 	</head>

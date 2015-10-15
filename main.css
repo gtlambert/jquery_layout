@@ -16,12 +16,12 @@ header {
 
 #left-container {
 	height: 100%;
-	width: 30%;
+	
 }
 
 #right-container {
 	height: 100%;
-	width: 70%;
+	background: yellow;
 }
 
 .ui-layout-pane {
